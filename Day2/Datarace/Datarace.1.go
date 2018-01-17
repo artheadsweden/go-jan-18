@@ -12,8 +12,8 @@ type SafeX struct {
 
 func (sx *SafeX) inc() {
 	sx.mux.Lock()
-	defer sx.mux.Unlock()
 	sx.x++
+	sx.mux.Unlock()
 }
 
 func main() {
