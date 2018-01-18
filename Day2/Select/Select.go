@@ -36,10 +36,11 @@ func main() {
 			fmt.Println(msg1)
 		case msg2 := <-c2:
 			fmt.Println(msg2)
-			//default:
+		default:
 			//	fmt.Println("Nothing to read")
 			//time.Sleep(time.Millisecond * 200)
 		}
+		fmt.Println("Jaha")
 	}
 
 }
